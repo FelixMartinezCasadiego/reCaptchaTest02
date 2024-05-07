@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 interface Props {
   sitekey: string;
-  verifyCallback: (response: any) => void;
+  verifyCallback: (response: string) => void;
 }
 const Recaptcha = ({ sitekey, verifyCallback }: Props) => {
   useEffect(() => {
